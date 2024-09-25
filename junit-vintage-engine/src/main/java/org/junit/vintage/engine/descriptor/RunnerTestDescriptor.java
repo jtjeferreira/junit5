@@ -48,7 +48,7 @@ public class RunnerTestDescriptor extends VintageTestDescriptor {
 	private List<Filter> filters = new ArrayList<>();
 
 	public RunnerTestDescriptor(UniqueId uniqueId, Class<?> testClass, Runner runner, boolean ignored) {
-		super(uniqueId, runner.getDescription(), testClass.getSimpleName(), ClassSource.from(testClass));
+		super(uniqueId, runner.getDescription(), testClass.getName(), ClassSource.from(testClass));
 		this.runner = runner;
 		this.ignored = ignored;
 	}
